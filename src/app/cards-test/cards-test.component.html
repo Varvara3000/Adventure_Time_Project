@@ -1,0 +1,24 @@
+<div class="cards-items">
+  <div class="cards-item"
+    [ngClass]="this.chosenCard == card ? 'active':''"
+    (click)="choseCardButton(card)"
+  *ngFor="let card of cards"
+  >
+    {{card}}
+  </div>
+</div>
+<div class="cards-wrapper">
+<input
+  [(ngModel)]="inputNumber"
+  class="cards-input">
+<button class="button"
+(click)="resetCardButton()"
+>Сбросить Карту</button>
+  <button class="button"
+    (click)="deleteCardButton()"
+  >Удалить Карту</button>
+  <button class="button"
+    (click)="addCardButton()"
+  >Добавить Карту</button>
+</div>
+

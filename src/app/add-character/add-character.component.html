@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="text">Имя</div>
+  <input  [(ngModel)]="name" class="input" />
+</div>
+<div class="wrapper">
+  <div class="text">Ссылка на картинку</div>
+  <input [(ngModel)]="inputImg" class="input" />
+</div>
+<div class="wrapper">
+  <div class="text">Детали</div>
+  <input [(ngModel)]="details" class="input" />
+</div>
+<div (click)="save()" class="button">Сохранить</div>

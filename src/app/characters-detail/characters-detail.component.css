@@ -1,0 +1,10 @@
+.character-detail {
+  border: 4mm ridge rgba(71, 179, 199, 0.3);;
+  font-size: 40px;
+  padding: 30px;
+  background: #E3E4FA;
+  -webkit-text-stroke-color:#045F5F;
+  -webkit-text-stroke-width: 1px;
+
+}
+

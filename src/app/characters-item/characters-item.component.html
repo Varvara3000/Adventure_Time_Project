@@ -1,0 +1,18 @@
+<div class="characters-item"
+  (click)="choseCharacter(character.id)"
+[ngClass]="chosenCharacter === character.id ? 'active':''"
+>
+  <img [src]="character.img" alt="" class="character-img">
+  <div class="character-name"
+    [ngStyle]="{color:character.color}"
+  >{{character.name}}</div>
+  <div class="delete-button"
+  (click)="deleteCharacter(character.id , $event)"
+  >X</div>
+</div>
+<div
+  *ngIf="chosenCharacter == character.id "
+  [routerLink]="'/' + character.id"
+  class="button">Детали</div>
+
+

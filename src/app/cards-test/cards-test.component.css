@@ -1,0 +1,32 @@
+.cards-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.cards-item {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #f08080;
+  color: #e3e4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cards-input {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #f08080;
+}
+.active{
+  background-color: #3CB371;
+}

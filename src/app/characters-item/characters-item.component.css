@@ -1,0 +1,33 @@
+.characters-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+gap: 10px;
+  border-radius: 10px;
+  border: 4mm ridge rgba(71, 179, 199, 0.3);
+  background: #E3E4FA;
+  position: relative;
+}
+.character-img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+.character-name{
+  font-size: 24px;
+
+}
+.delete-button{
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  color: brown;
+  position: absolute;
+  top: 7px;
+  right: -34px;
+  cursor: pointer;
+}
+.active{
+  border: 4mm ridge rgba(0, 255, 5, 0.5);
+}

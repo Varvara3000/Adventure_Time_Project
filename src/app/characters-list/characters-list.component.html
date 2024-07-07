@@ -1,0 +1,12 @@
+<div class="characters-list-wrapper">
+  <app-characters-item
+    (chosedCharacter)="choseCharacter($event)"
+    [chosenCharacter]="chosenCharacter"
+    (characterDelete)="deleteButton($event)"
+    [character]="character"
+    *ngFor="let character of filterCharacters"
+  ></app-characters-item>
+</div>
+<div class="button" routerLink="add-character">Создать</div>
+<input [ngModel]="search" (ngModelChange)="filterCharacter($event)" class="input" />
+
